@@ -19,7 +19,6 @@ There are multiple ways you can speed up your model's time to convergence:
 * `<Mixed precision (16-bit) training_>`_
 
 * `<Control Training Epochs_>`_
-
 * `<Control Validation Frequency_>`_
 
 * `<Limit Dataset Size_>`_
@@ -116,7 +115,7 @@ Lightning supports a variety of plugins to further speed up distributed GPU trai
 * :class:`~pytorch_lightning.plugins.training_type.DDPShardedPlugin`
 * :class:`~pytorch_lightning.plugins.training_type.DeepSpeedPlugin`
 
-.. testcode::
+.. code-block:: python
 
     # run on 1 gpu
     trainer = Trainer(gpus=1)
